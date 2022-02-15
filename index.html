@@ -11,8 +11,8 @@
 
         <link rel="stylesheet" href="CSS/normalize.css">
         <link rel="stylesheet" href="CSS/reset.css">
-        <link rel="stylesheet" media="screen and (max-width: 768px)" href="CSS/style.css" />
-        <link rel="stylesheet" media="screen and (max-width: 992px)" href="CSS/tablet.css" />
+        <link rel="stylesheet" href="CSS/style.css" />
+        <link rel="stylesheet" media="screen and (min-width: 768px)" href="CSS/tablet.css" />
         <link rel="stylesheet" media="screen and (min-width: 993px)" href="CSS/desktop.css" />
 
 <!-- CDN Font Awesome -->
@@ -28,12 +28,67 @@
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-<!-- Titre de la page -->
+<!-- Page Title -->
 
         <title>Acceuil - OhMyFood</title>
 
     </head>
 
-<!-- Corps de la page -->
+<!-- Page Body -->
 
     <body>
+        
+        <!--HEADER-->
+
+        <header>
+                <h1>Ohmyfood</h1>
+        </header>
+
+        <!--Localisation-->
+
+        <div class="localisation">
+                <i class="fas fa-map-marker-alt"></i>
+                <p class="txt_localisation">Paris, Belleville</p>
+        </div>
+
+        <!--Introduction section-->
+
+        <section class="intro">
+                <h2>Réservez le menu qui vous convient</h2>
+                <p>Découvrez des restaurants d'exception, séléctionnés par nos soin</p>
+                <a href="#restaurant"><p>Explorer nos restaurants</p></a>
+        </section>
+
+        <!--Functionning section-->
+
+        <section class="functionning">
+
+                <h3>Fonctionnement</h3>
+
+                <!--Step 1-->
+
+                <div class="step">
+                        <p class="step_number">1</p>
+                        <i class="fas fa-mobile-alt"></i>
+                        <p>Choisissez un restaurants</p>
+                </div>
+
+                <!--Step 2-->
+
+                <div class="step">
+                        <p class="step_number">2</p>
+                        <i class="fas fa-list-ul"></i>
+                        <p>Composez votre menu</p>
+                </div>
+
+                <!--Step 3-->
+
+                <div class="step">
+                        <p class="step_number">3</p>
+                        <i class="fas fa-store"></i>
+                        <p>Dégustez au restaurant</p>
+                </div>
+        </section>
+
+    </body>
+</html>
