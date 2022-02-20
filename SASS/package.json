@@ -1,0 +1,19 @@
+{
+  "name": "perrinnicolas_3_14022022-1",
+  "version": "1.0.0",
+  "description": "ohmyfood project 3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolasPerrin73/PerrinNicolas_3_14022022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicolasPerrin73/PerrinNicolas_3_14022022/issues"
+  },
+  "homepage": "https://github.com/NicolasPerrin73/PerrinNicolas_3_14022022#readme"
+}
