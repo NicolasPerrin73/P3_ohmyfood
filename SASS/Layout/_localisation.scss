@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(234, 234, 234);
+    background-color: darken($color: $grey-bg, $amount: 4.7);
     box-shadow: inset 0px 8px 12px -15px black;
     padding-right: 30px;
 }

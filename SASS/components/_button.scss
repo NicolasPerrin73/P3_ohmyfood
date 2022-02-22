@@ -1,0 +1,11 @@
+.btn
+{
+    background: linear-gradient($secondary-color, $primary-color);
+    color: #FFF;
+    width: 217px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

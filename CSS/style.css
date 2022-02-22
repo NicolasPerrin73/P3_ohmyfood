@@ -403,6 +403,10 @@ body {
   font-family: "Roboto", Verdana, Tahoma, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Header */
 h1 {
   font-family: "Shrikhand", Impact, sans-serif;
@@ -430,23 +434,38 @@ h1 {
 /* Introduction Section */
 .intro {
   height: 287px;
-  width: 81%;
   margin: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
 }
-
-h2 {
-  font-size: 24px;
+.intro__h2 {
+  font-size: 26px;
   font-weight: 700;
   text-align: center;
-  margin-top: 43px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 15px;
 }
-
-.intro p {
+.intro__p {
   text-align: center;
   margin-bottom: 31px;
+  padding-left: 24px;
+  padding-right: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.btn {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #FFF;
+  width: 217px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

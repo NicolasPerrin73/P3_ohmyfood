@@ -1,10 +1,10 @@
 {
-  "name": "perrinnicolas_3_14022022-1",
+  "name": "sass",
   "version": "1.0.0",
-  "description": "ohmyfood project 3",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+    "sass": "sass --watch ./main.scss:../CSS/style.css"
   },
   "repository": {
     "type": "git",
