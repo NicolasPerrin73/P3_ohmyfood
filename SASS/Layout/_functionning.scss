@@ -1,0 +1,55 @@
+/* Functionning section */
+
+.functionning
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 67px;
+
+    &__step{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 268px;
+
+        &__card{
+            display: flex;
+            width: 86%;
+            height: 73px;
+            background-color: $grey-bg;
+            margin-left: 34px;
+            border-radius: 15px;
+            @include box-shadow;
+            position: relative;
+            align-items: center;
+            
+            &__number{
+                width: 16px;
+                padding: 5px;
+                text-align: center;
+                background-color: $primary-color;
+                border-radius: 50%;
+                color: #fff;
+                position: relative;
+                right: 16px;
+            }
+
+            &__ico{
+                color: darken($color: $grey-bg, $amount: 50);
+                font-size: 20px;
+                width: 20px;
+                margin-left: 5px;
+            }
+
+            &__txt{
+                font-weight: 600;
+                margin-left: 20px;
+            }
+
+            &:hover{
+                background-color: lighten($color: $primary-color, $amount: 36);
+            }
+        }
+    }
+}
+
