@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./main.scss:../CSS/style.css"
+    "sass": "sass --watch ./main.scss:../CSS/style.css",
+    "prefix": "postcss ../css/style.css --use autoprefixer -d ../CSS/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,8 +13,12 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/NicolasPerrin73/PerrinNicolas_3_14022022/issues"
   },
-  "homepage": "https://github.com/NicolasPerrin73/PerrinNicolas_3_14022022#readme"
+  "homepage": "https://github.com/NicolasPerrin73/PerrinNicolas_3_14022022#readme",
+  "dependencies": {
+    "sass-autoprefixer": "^1.0.1"
+  }
 }
