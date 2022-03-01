@@ -1,11 +1,16 @@
 @mixin bg-gradient {
-    background: linear-gradient($secondary-color, $primary-color);
+    background: -webkit-linear-gradient($secondary-color, $primary-color);
 }
 
-@mixin bg-gradient-darken {
-    background: linear-gradient(lighten($secondary-color,2),lighten($primary-color,2));
+@mixin bg-gradient-lighten {
+    background: -webkit-linear-gradient(lighten($secondary-color,2),lighten($primary-color,2));
 } 
 
 @mixin box-shadow {
     box-shadow: 0px 3px 10px -7px black;
+}
+
+@mixin box-shadow-dark {
+    box-shadow: 0 3px 10px -5px black;
+    
 }

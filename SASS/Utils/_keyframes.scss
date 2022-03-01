@@ -1,6 +1,7 @@
 @keyframes fill{
     from{
         background: transparent;
+        opacity: 0;
     }
 
     to{
@@ -8,5 +9,6 @@
         background: linear-gradient($primary-color, $secondary-color);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        opacity: 1;
     }
 }

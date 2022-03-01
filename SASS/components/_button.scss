@@ -9,8 +9,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     &:hover{
-        @include bg-gradient-darken;
+        @include box-shadow-dark;
+        @include bg-gradient-lighten
+        
+        
     }
 }
