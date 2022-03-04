@@ -400,15 +400,15 @@ template {
 
 @keyframes fill {
   from {
-    background: transparent;
-    opacity: 0;
+    background-color: transparent;
+    transform: scale(0.1);
   }
   to {
     font-weight: bold;
     background: linear-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    opacity: 1;
+    transform: scale(1);
   }
 }
 .btn {
@@ -606,13 +606,22 @@ h4 {
   margin-left: 14px;
 }
 
-.fa-heart {
+.heart-1 {
   font-size: 26px;
   position: absolute;
   right: 26px;
   top: 23px;
+  z-index: 1;
 }
-.fa-heart:hover {
+
+.heart-2 {
+  font-size: 26px;
+  position: absolute;
+  right: 26px;
+  top: 23px;
+  z-index: 2;
+}
+.heart-2:hover {
   animation: fill 1s both;
 }
 
