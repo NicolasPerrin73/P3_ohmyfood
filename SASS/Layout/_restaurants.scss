@@ -64,27 +64,39 @@ h4{
     margin-left: 14px;
 }
 
+.bg-heart{
+    position: absolute;
+    right: 26px;
+    top: 23px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
 .heart-1{
     font-size: 26px;
-    position: absolute;
-    right: 26px;
-    top: 23px;
-    z-index: 1;
-}
-
-.heart-2{
-    font-size: 26px;
-    position: absolute;
-    right: 26px;
-    top: 23px;
+    
     z-index: 2;
 
-    
     &:hover{
-            animation: fill 1s both;
+        animation: fill2 1s both;
+    }
+}
+
+/*.heart-2{
+    font-size: 26px;
+    z-index: 1;
+    font-weight: bold !important;
+        background: linear-gradient($primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: scale(1);
+
+        &:hover{
+            animation: fill2 1s both;
             
         }
+}*/
 
-}
 
 

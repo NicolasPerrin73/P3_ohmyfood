@@ -13,3 +13,15 @@
         transform: scale(1);
     }
 }
+
+@keyframes fill2 {
+    from{
+        
+    }
+
+    to{
+        overflow: hidden;
+        transform: translateY(-20px)
+    }
+    
+}
