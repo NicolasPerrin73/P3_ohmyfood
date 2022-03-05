@@ -404,9 +404,8 @@ template {
     animation-timing-function: cubic-bezier(0.16, 0.61, 0.67, 0.87);
   }
   100% {
-    overflow: hidden;
-    transform-origin: top center;
     height: 0px;
+    overflow: hidden;
   }
 }
 .btn {
@@ -614,18 +613,18 @@ h4 {
 }
 .fa-heart__empty {
   overflow: hidden;
-  z-index: 2 !important;
   background: white;
+  z-index: 2;
 }
 .fa-heart__empty:hover {
-  animation: fill 1s both;
+  animation: fill 1s forwards;
 }
 .fa-heart__full {
   font-weight: bold !important;
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  z-index: 1 !important;
+  z-index: 1;
 }
 
 /* Footer section */

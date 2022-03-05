@@ -73,13 +73,12 @@ h4{
     height: 30px;
 
     &__empty{
-    
         overflow: hidden;
-        z-index: 2 !important;
         background: white;
+        z-index: 2;
         
         &:hover{
-            animation: fill 1s both;
+            animation: fill 1s forwards;
         }
     }
 
@@ -89,8 +88,7 @@ h4{
         background: linear-gradient($primary-color, $secondary-color);
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        z-index: 1 !important;
-    
+        z-index: 1;    
     }
 }
 
