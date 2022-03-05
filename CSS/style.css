@@ -406,15 +406,9 @@ template {
   to {
     font-weight: bold;
     background: linear-gradient(#9356DC, #FF79DA);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(1);
-  }
-}
-@keyframes fill2 {
-  to {
-    overflow: hidden;
-    transform: translateY(-20px);
   }
 }
 .btn {
@@ -612,37 +606,35 @@ h4 {
   margin-left: 14px;
 }
 
-.bg-heart {
+.heart-empty {
   position: absolute;
   right: 26px;
   top: 23px;
+  font-size: 26px;
   width: 30px;
   height: 30px;
   overflow: hidden;
+  z-index: 2 !important;
+  background: white;
 }
-
-.heart-1 {
-  font-size: 26px;
-  z-index: 2;
-}
-.heart-1:hover {
+.heart-empty:hover {
   animation: fill2 1s both;
 }
 
-/*.heart-2{
-    font-size: 26px;
-    z-index: 1;
-    font-weight: bold !important;
-        background: linear-gradient($primary-color, $secondary-color);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transform: scale(1);
+.heart-full {
+  position: absolute;
+  right: 26px;
+  top: 23px;
+  font-size: 26px;
+  width: 30px;
+  height: 30px;
+  font-weight: bold !important;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1 !important;
+}
 
-        &:hover{
-            animation: fill2 1s both;
-
-        }
-}*/
 /* Footer section */
 .footer {
   background-color: #323232;

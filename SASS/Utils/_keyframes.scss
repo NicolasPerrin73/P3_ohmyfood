@@ -8,20 +8,9 @@
     to{
         font-weight: bold;
         background: linear-gradient($primary-color, $secondary-color);
-        -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         transform: scale(1);
     }
 }
 
-@keyframes fill2 {
-    from{
-        
-    }
-
-    to{
-        overflow: hidden;
-        transform: translateY(-20px)
-    }
-    
-}
