@@ -64,36 +64,39 @@ h4{
     margin-left: 14px;
 }
 
-.heart-empty{
+.fa-heart{
     position: absolute;
     right: 26px;
-    top: 23px;
+    top: 200px;
     font-size: 26px;
     width: 30px;
     height: 30px;
-    overflow: hidden;
-    z-index: 2 !important;
-    background: white;
+
+    &__empty{
     
-    &:hover{
-        animation: fill2 1s both;
+        overflow: hidden;
+        z-index: 2 !important;
+        background: white;
+        
+        &:hover{
+            animation: fill 1s both;
+        }
+    }
+
+    &__full{
+
+        font-weight: bold !important;
+        background: linear-gradient($primary-color, $secondary-color);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: 1 !important;
+    
     }
 }
 
-.heart-full{
-    position: absolute;
-    right: 26px;
-    top: 23px;
-    font-size: 26px;
-    width: 30px;
-    height: 30px;
-    font-weight: bold !important;
-    background: linear-gradient($primary-color, $secondary-color);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    z-index: 1 !important;
 
-}
+
+
 
 
 

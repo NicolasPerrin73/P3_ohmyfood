@@ -1,16 +1,14 @@
-@keyframes fill{
-    from{
-        background-color: transparent;
-        transform: scale(0.1);
-
+@keyframes fill {
+    0%{
+        height: 30px;
+        animation-timing-function: cubic-bezier(.16,.61,.67,.87);
     }
 
-    to{
-        font-weight: bold;
-        background: linear-gradient($primary-color, $secondary-color);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transform: scale(1);
+    100%{
+        overflow: hidden;
+        transform-origin: top center;
+        height: 0px;
+       
     }
+    
 }
-
