@@ -64,7 +64,7 @@ h4{
     margin-left: 14px;
 }
 
-.fa-heart{
+.main-heart{
     position: absolute;
     right: 26px;
     top: 200px;
@@ -73,6 +73,9 @@ h4{
     height: 30px;
 
     &__empty{
+        position: absolute;
+        top: 0px;
+        left: 0px;
         overflow: hidden;
         background: white;
         z-index: 2;
@@ -83,7 +86,9 @@ h4{
     }
 
     &__full{
-
+        position: absolute;
+        top: 0px;
+        left: 0px;
         font-weight: bold !important;
         background: linear-gradient($primary-color, $secondary-color);
         background-clip: text;
@@ -91,6 +96,10 @@ h4{
         z-index: 1;    
     }
 }
+
+
+
+
 
 
 
