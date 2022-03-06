@@ -1,5 +1,9 @@
 /* Header */
 
+header{
+    position: relative;
+}
+
 h1
 {
     font-family: 'Shrikhand', Impact, sans-serif;
@@ -7,4 +11,12 @@ h1
     text-align: center;
     margin-top: 21px;
     margin-bottom: 12px;
+}
+
+.fa-arrow-left{
+    font-size: 18px;
+    position: absolute;
+    top: 4px;
+    left: 24px;
+
 }

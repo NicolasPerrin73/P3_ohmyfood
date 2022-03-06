@@ -42,6 +42,14 @@
         border-radius: 5px;
         color: darken($color: $tertiary-color, $amount: 40);
     }
+
+    &__h4{
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 19px;
+        margin-bottom: 7px;
+        margin-left: 14px;
+    }
 }
 
 figcaption{
@@ -50,13 +58,6 @@ figcaption{
     position: relative;
 }
 
-h4{
-    font-size: 18px;
-    font-weight: 700;
-    margin-top: 19px;
-    margin-bottom: 7px;
-    margin-left: 14px;
-}
 
 .restaurant_location{
     font-size: 18px;
@@ -77,13 +78,16 @@ h4{
         top: 0px;
         left: 0px;
         overflow: hidden;
-        background: white;
         z-index: 2;
-        
-        &:hover{
-            animation: fill 1s forwards;
-        }
+    
+    &--bg{
+        background: white;
     }
+        
+    &:hover{
+        animation: fill 1s forwards;
+    }
+}
 
     &__full{
         position: absolute;

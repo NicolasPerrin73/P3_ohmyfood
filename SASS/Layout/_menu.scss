@@ -1,0 +1,83 @@
+/* Menu section */
+
+.page-heart{
+    position: absolute;
+    right: 39px;
+    top: 39px;
+    font-size: 26px;
+    width: 30px;
+    height: 30px;
+}
+
+.page-heart__empty--bg{
+    background: $grey-bg;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px 40px 0px 0px;
+    position: relative;
+    top: -33px;
+    background-color: $grey-bg;
+
+    &__h2{
+        font-family: 'Shrikhand', Impact, sans-serif;
+        font-size: 28px;
+        margin-top: 38px;
+        margin-bottom: 35px;
+        margin-left: 20px;
+    }
+}
+.menu_section{
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 43px;
+
+
+    &__card{
+        background-color: white;
+        width: 93%;
+        height: 69px;
+        border-radius: 15px;
+        margin: auto;
+        @include box-shadow;
+        display: flex;
+
+        &__h4{
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 17px;
+            margin-bottom: 7px;
+            margin-left: 11px;
+        }
+
+        &__txt{
+            margin-left: 11px;
+        }
+
+    }
+
+}
+
+.price{
+    align-self: flex-end;
+    padding-bottom: 11px;
+}
+
+.check-box{
+    background-color: $tertiary-color;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.fa-check-circle{
+    font-size: 20px;
+    color: white;
+}
+
