@@ -704,6 +704,10 @@ figcaption {
   margin: auto;
   box-shadow: 0px 3px 10px -7px black;
   display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
 }
 .menu_section__card__h4 {
   font-size: 18px;
@@ -711,28 +715,43 @@ figcaption {
   margin-top: 17px;
   margin-bottom: 7px;
   margin-left: 11px;
+  text-overflow: ellipsis;
 }
 .menu_section__card__txt {
   margin-left: 11px;
+  text-overflow: ellipsis;
 }
-
-.price {
+.menu_section__card:hover > .check-box {
+  transform: translateX(-60px);
+}
+.menu_section__card:hover > .price {
+  transform: translateX(-60px);
+}
+.menu_section__card:hover .fa-check-circle {
+  transform: rotate(360deg);
+}
+.menu_section .price {
   align-self: flex-end;
   padding-bottom: 11px;
+  transition: transform 500ms;
 }
-
-.check-box {
+.menu_section .check-box {
   background-color: #99E2D0;
   width: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0px 15px 15px 0px;
+  position: absolute;
+  height: 100%;
+  right: -60px;
+  transition: transform 500ms;
 }
-
-.fa-check-circle {
+.menu_section .fa-check-circle {
   font-size: 20px;
   color: white;
+  transform: rotate(0deg);
+  transition: transform 500ms ease-in-out;
 }
 
 /* Footer section */
