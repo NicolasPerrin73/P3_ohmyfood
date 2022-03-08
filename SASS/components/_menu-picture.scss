@@ -1,6 +1,11 @@
 /* Menu picture style */
-
 .menu-picture{
+    height: 217px;
     width: 100%;
-    object-fit: cover;
+
+    &__image{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
 }

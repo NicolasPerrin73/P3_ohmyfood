@@ -18,8 +18,8 @@
     flex-direction: column;
     border-radius: 40px 40px 0px 0px;
     position: relative;
-    top: -33px;
     background-color: $grey-bg;
+    padding-bottom: 84px;
 
     &__h2{
         font-family: 'Shrikhand', Impact, sans-serif;
@@ -29,6 +29,7 @@
         margin-left: 20px;
     }
 }
+
 .menu_section{
 
     display: flex;
@@ -45,10 +46,17 @@
         margin: auto;
         @include box-shadow;
         display: flex;
-        justify-content: space-between;
         overflow: hidden;
         position: relative;
         text-overflow: ellipsis;
+
+        &__description{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 290px;
+            transition: all 500ms;
+        }
 
         &__h4{
             font-size: 18px;
@@ -56,34 +64,51 @@
             margin-top: 17px;
             margin-bottom: 7px;
             margin-left: 11px;
+            white-space: nowrap;
             text-overflow: ellipsis;
+            overflow: hidden;
         }
 
         &__txt{
             margin-left: 11px;
+            white-space: nowrap;
             text-overflow: ellipsis;
+            overflow: hidden;
         }
 
-        &:hover > .check-box{
-            transform: translateX(-60px);
-
+        &--translate{
+            display: flex;
+            position: absolute;
+            right: -60px;
+            height: 100%;
+            transition: transform 500ms ease-in-out;
         }
 
-        &:hover > .price{
+
+        &:hover > .menu_section__card--translate{
             transform: translateX(-60px);
+
         }
 
         &:hover .fa-check-circle{
             transform: rotate(360deg);
 
+        }
+
+        &:hover > .menu_section__card__description{
+            width: 230px;
+        }
+
     }
 
-}
+}    
 
 .price{
+    display: flex;
     align-self: flex-end;
     padding-bottom: 11px;
-    transition: transform 500ms;
+    width: 50px;
+    font-weight: 500;
 }
 
 .check-box{
@@ -93,10 +118,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 0px 15px 15px 0px;
-    position: absolute;
     height: 100%;
-    right: -60px;
-    transition: transform 500ms;
 }
 
 .fa-check-circle{
@@ -106,4 +128,3 @@
     transition: transform 500ms ease-in-out;
 }
 
-}
