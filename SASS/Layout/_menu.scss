@@ -49,6 +49,14 @@
         overflow: hidden;
         position: relative;
         text-overflow: ellipsis;
+        opacity: 0;
+        animation: card-appear 1s cubic-bezier(.45,.43,.26,1) forwards;
+
+        @for $i from 1 to 10{
+            &--#{$i} {
+                animation-delay: 150ms * $i;
+            }
+        }
 
         &__description{
             white-space: nowrap;
