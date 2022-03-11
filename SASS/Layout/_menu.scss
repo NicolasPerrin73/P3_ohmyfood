@@ -52,7 +52,7 @@
         opacity: 0;
         animation: card-appear 1s cubic-bezier(.45,.43,.26,1) forwards;
 
-        @for $i from 1 to 10{
+        @for $i from 1 to 11{
             &--#{$i} {
                 animation-delay: 150ms * $i;
             }

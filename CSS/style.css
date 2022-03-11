@@ -756,6 +756,9 @@ figcaption {
 .menu_section__card--9 {
   animation-delay: 1350ms;
 }
+.menu_section__card--10 {
+  animation-delay: 1500ms;
+}
 .menu_section__card__description {
   white-space: nowrap;
   text-overflow: ellipsis;
