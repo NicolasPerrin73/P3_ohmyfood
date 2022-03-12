@@ -24,33 +24,70 @@
     }
 }
 
-@keyframes door-animation {
+@keyframes loader-disappear {
     0%{
-        
-        transform: perspective(800px) rotateY(0deg);
-        transform-origin: 85% 50%;
+        opacity: 1;
     }
 
     100%{
-        transform: perspective(800px) rotateY(89deg);
-        transform-origin: 85% 50%;
+        opacity: 0;
     }
 }
 
-@keyframes enter {
+
+@keyframes dot-fall {
     0%{
-        transform: perspective(800px) translateZ(0);
-        opacity: 1;
-        transition-timing-function: cubic-bezier(.53,.54,.4,.97);
+        transform: translateY(-600px); 
     }
 
-    50%{
-        opacity: 0;
+    90%{
+        transform: translateY(-5px) scale(1);
     }
 
     100%{
-        transform: perspective(800px) translateZ(800px);
-        z-index: -1;
+        transform: translateY(0px) scale(1.2, 0.8);
+        
+    }
+
+}
+
+@keyframes dot-mouv {
+
+    0%{
+        transform: translateY(0px) scale(1.2, 0.8);
+        animation-timing-function: cubic-bezier(.39,.66,.45,.95); /*ralenti en fin de course */
+    }
+
+    50%{
+        transform: translateY(-30px);
+        animation-timing-function: cubic-bezier(.72,.13,.89,.6); /*ralenti en debut de course */
+  
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+
+
+@keyframes dot-leave {
+    0%{
+        transform: scale(1);
     }
     
+    25%{
+        transform: scale(0.6, 1.4);
+    }
+    
+    50%{
+        transform: scale(1.4, 0.6) translate(0);
+        animation-timing-function: cubic-bezier(.8,.12,.83,.56);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translate(400px);
+        opacity: 0;
+    }
 }
