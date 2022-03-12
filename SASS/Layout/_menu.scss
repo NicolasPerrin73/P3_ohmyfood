@@ -7,11 +7,12 @@
     font-size: 26px;
     width: 30px;
     height: 30px;
+
+    &:hover > .main-heart__full{
+        animation: fill 500ms forwards;
+    }
 }
 
-.page-heart__empty--bg{
-    background: $grey-bg;
-}
 
 .menu{
     display: flex;

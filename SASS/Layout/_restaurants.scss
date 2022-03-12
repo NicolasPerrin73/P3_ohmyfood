@@ -73,20 +73,15 @@ figcaption{
     width: 30px;
     height: 30px;
 
+    &:hover > .main-heart__full{
+        animation: fill 500ms forwards;
+    }
+
+
     &__empty{
         position: absolute;
         top: 0px;
         left: 0px;
-        overflow: hidden;
-        z-index: 2;
-    
-    &--bg{
-        background: white;
-    }
-        
-    &:hover{
-        animation: fill 1s forwards;
-    }
 }
 
     &__full{
@@ -97,7 +92,9 @@ figcaption{
         background: linear-gradient($primary-color, $secondary-color);
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        z-index: 1;    
+        transform: scale(0);
+
+
     }
 }
 

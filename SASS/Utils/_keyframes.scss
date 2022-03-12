@@ -1,11 +1,11 @@
 @keyframes fill {
     0%{
-        height: 30px;
+        transform: scale(0);
         animation-timing-function: cubic-bezier(.16,.61,.67,.87);
     }
 
     100%{
-        height: 0px;
+        transform: scale(1);
         overflow: hidden;
     }
     
