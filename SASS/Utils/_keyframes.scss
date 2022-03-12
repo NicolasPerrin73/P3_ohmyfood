@@ -69,25 +69,3 @@
     }
 
 }
-
-
-@keyframes dot-leave {
-    0%{
-        transform: scale(1);
-    }
-    
-    25%{
-        transform: scale(0.6, 1.4);
-    }
-    
-    50%{
-        transform: scale(1.4, 0.6) translate(0);
-        animation-timing-function: cubic-bezier(.8,.12,.83,.56);
-        opacity: 1;
-    }
-
-    100%{
-        transform: translate(400px);
-        opacity: 0;
-    }
-}
