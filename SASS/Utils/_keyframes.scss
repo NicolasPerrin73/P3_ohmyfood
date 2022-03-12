@@ -23,3 +23,34 @@
         opacity: 1;
     }
 }
+
+@keyframes door-animation {
+    0%{
+        
+        transform: perspective(800px) rotateY(0deg);
+        transform-origin: 85% 50%;
+    }
+
+    100%{
+        transform: perspective(800px) rotateY(89deg);
+        transform-origin: 85% 50%;
+    }
+}
+
+@keyframes enter {
+    0%{
+        transform: perspective(800px) translateZ(0);
+        opacity: 1;
+        transition-timing-function: cubic-bezier(.53,.54,.4,.97);
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        transform: perspective(800px) translateZ(800px);
+        z-index: -1;
+    }
+    
+}

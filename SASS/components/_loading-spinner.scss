@@ -1,0 +1,25 @@
+/* Loadin Spinner */
+
+.loading{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: enter 1s 1s both;
+
+    &__door-img{
+        position: absolute;
+        width: 50%;
+
+
+        &--anim{
+            animation: door-animation 700ms 300ms both ease-out;
+        }
+
+    }
+
+}
