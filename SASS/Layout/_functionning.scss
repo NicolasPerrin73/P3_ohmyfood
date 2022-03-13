@@ -6,25 +6,36 @@
     flex-direction: column;
     margin-bottom: 67px;
 
-
-
     &__step{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 268px;
+        padding-left: 13px;
+
+        @media (min-width:768px) {
+            flex-direction: row;
+            justify-content: space-between;
+            height: auto;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
 
         &__card{
             display: flex;
             width: 86%;
             height: 73px;
             background-color: $grey-bg;
-            margin-left: 34px;
+            margin: auto;
             border-radius: 15px;
             @include box-shadow;
             position: relative;
             align-items: center;
             transition: all 500ms;
+
+            @media (min-width:768px) {
+                width: 290px;
+            }
             
             &__number{
                 width: 16px;

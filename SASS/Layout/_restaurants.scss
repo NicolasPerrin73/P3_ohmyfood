@@ -13,6 +13,14 @@
         margin: auto;
         gap: 17px;
         margin-bottom: 65px;
+
+        @media (min-width:768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 95%;
+            height: 100%;
+        }
     }
 
     &__card{
@@ -22,6 +30,10 @@
         border-radius: 15px;
         @include box-shadow;
         position: relative;
+
+        @media (min-width:768px) {
+            width: 355px;
+        }
     }
 
     &__img{

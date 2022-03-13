@@ -9,6 +9,11 @@
     align-items: center;
     background-color: $grey-bg;
 
+    @media (min-width:768px) {
+        height: auto;
+        padding-bottom: 20px;            
+    }
+
     &__h2
     {
         font-size: 26px;
@@ -16,6 +21,7 @@
         text-align: center;
         margin-top: 40px;
         margin-bottom: 15px;
+        padding: 0px 55px;
     }
 
     &__p

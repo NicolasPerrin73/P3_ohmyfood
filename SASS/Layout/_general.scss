@@ -3,6 +3,8 @@
 body
 {
     font-family: 'Roboto', Verdana, Tahoma, sans-serif;
+    max-width: 1920px;
+    margin: auto;
 }
 
 a{
@@ -15,7 +17,11 @@ a{
         font-weight: 700;
         margin-top: 53px;
         margin-bottom: 27px;
-        margin-left: 21px;    
+        margin-left: 21px;
+        
+        @media (min-width:768px) {
+         text-align: center;   
+        }
 }
 
 .page__h3{
