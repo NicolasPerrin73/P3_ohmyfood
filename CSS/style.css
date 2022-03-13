@@ -807,11 +807,28 @@ figcaption {
   margin-left: 20px;
 }
 
+.menu-bloc {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .menu-bloc {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
 .menu_section {
   display: flex;
   flex-direction: column;
   gap: 14px;
   margin-bottom: 43px;
+}
+@media (min-width: 768px) {
+  .menu_section {
+    flex-grow: 1;
+  }
 }
 .menu_section__card {
   background-color: white;
@@ -861,7 +878,7 @@ figcaption {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  width: 290px;
+  width: 80%;
   transition: all 500ms;
 }
 .menu_section__card__h4 {
@@ -894,7 +911,7 @@ figcaption {
   transform: rotate(360deg);
 }
 .menu_section__card:hover > .menu_section__card__description {
-  width: 230px;
+  width: calc(80% - 60px);
 }
 
 .price {
