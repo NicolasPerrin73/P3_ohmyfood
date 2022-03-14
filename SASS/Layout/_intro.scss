@@ -1,9 +1,8 @@
 /* Introduction Section */
 
-.intro
-{
+/* Introduction container */
+.intro{
     height: 287px;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,8 +13,8 @@
         padding-bottom: 20px;            
     }
 
-    &__h2
-    {
+    /* Introduction title */
+    &__h2{
         font-size: 26px;
         font-weight: 700;
         text-align: center;
@@ -24,14 +23,14 @@
         padding: 0px 55px;
     }
 
-    &__p
-{
-    text-align: center;
-    margin-bottom: 31px;
-    padding-left: 24px;
-    padding-right: 20px;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.2;
-}
+    /* Introduction text */
+    &__p{
+        text-align: center;
+        margin-bottom: 31px;
+        padding-left: 24px;
+        padding-right: 20px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.2;
+    }
 }

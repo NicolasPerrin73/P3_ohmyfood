@@ -2,21 +2,22 @@
 
 header{
     position: relative;
+    padding-top: 22px;
+    padding-bottom: 12px;
 }
 
-h1
-{
+/*Logo*/
+h1{
     font-family: 'Shrikhand', Impact, sans-serif;
     font-size: 30px;                                            
     text-align: center;
-    margin-top: 21px;
-    margin-bottom: 12px;
+    margin: 0;
 }
 
+/* Back arrow to main page */
 .fa-arrow-left{
     font-size: 18px;
     position: absolute;
     top: 4px;
     left: 24px;
-
 }

@@ -1,17 +1,17 @@
 /* Localisation */
 
-.localisation
-{
+/* Localisation container */
+.localisation{
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: darken($color: $grey-bg, $amount: 4.7);
+    background-color: darken($color: $grey-bg, $amount: 4.7); /* dark version of $grey-bg variable */
     box-shadow: inset 0px 8px 12px -15px black;
     padding-right: 30px;
 }
 
-.fa-map-marker-alt
-{
+/* Localisation icon */
+.fa-map-marker-alt{
     margin-right: 18px;
 }
