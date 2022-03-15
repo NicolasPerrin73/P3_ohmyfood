@@ -1,11 +1,12 @@
 /* Restaurants Section */
 
+/* Restaurant container */
 .restaurant{
     background-color: $grey-bg;
     display: flex;
     flex-direction: column;
     
-
+    /*Card container */
     &__bloc{
         display: flex;
         flex-direction: column;
@@ -23,9 +24,8 @@
         }
     }
 
+    /* Card */
     &__card{
-        display: flex;
-        flex-direction: column;
         background-color: white;
         border-radius: 15px;
         @include box-shadow;
@@ -36,6 +36,7 @@
         }
     }
 
+    /* Card images */
     &__img{
         width: 100%;
         height: 174px;
@@ -43,6 +44,7 @@
         border-radius: 15px 15px 0px 0px;
     }
 
+    /* New bagde */
     &__new{
         font-size: 0.8em;
         font-weight: 400;
@@ -55,28 +57,30 @@
         color: darken($color: $tertiary-color, $amount: 40);
     }
 
-    &__h4{
-        font-size: 18px;
-        font-weight: 700;
-        margin-top: 19px;
-        margin-bottom: 7px;
-        margin-left: 14px;
+    /* Card description */
+    &__description{
+        position: relative;
+
+        /*Restaurant name */
+        &__name{
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 19px;
+            margin-bottom: 7px;
+            margin-left: 14px;
+        }
+        
+        /* Restaurant location */
+        &__location{
+            font-size: 18px;
+            margin-bottom: 16px;
+            margin-left: 14px;
+        }
     }
+
 }
 
-figcaption{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-
-.restaurant_location{
-    font-size: 18px;
-    margin-bottom: 16px;
-    margin-left: 14px;
-}
-
+/* Heart container main page */
 .main-heart{
     position: absolute;
     right: 26px;
@@ -85,17 +89,18 @@ figcaption{
     width: 30px;
     height: 30px;
 
+    /* Combinator to select heart full when heart container hover */
     &:hover > .main-heart__full{
-        animation: fill 500ms forwards;
+        animation: fill 500ms forwards; /* animation keyframe fill effect for heart */
     }
 
-
+    /* heart empty */
     &__empty{
         position: absolute;
         top: 0px;
         left: 0px;
 }
-
+    /* heart full */
     &__full{
         position: absolute;
         top: 0px;

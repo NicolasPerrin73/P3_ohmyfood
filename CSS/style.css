@@ -566,7 +566,6 @@ h1 {
 .fa-arrow-left {
   font-size: 18px;
   position: absolute;
-  top: 4px;
   left: 24px;
 }
 
@@ -641,7 +640,7 @@ h1 {
 @media (min-width: 768px) {
   .functionning__step {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     height: auto;
     flex-wrap: wrap;
     gap: 15px;
@@ -699,10 +698,16 @@ h1 {
 }
 
 /* Restaurants Section */
+/* Restaurant container */
 .restaurant {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
+  /*Card container */
+  /* Card */
+  /* Card images */
+  /* New bagde */
+  /* Card description */
 }
 .restaurant__bloc {
   display: flex;
@@ -722,8 +727,6 @@ h1 {
   }
 }
 .restaurant__card {
-  display: flex;
-  flex-direction: column;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 3px 10px -7px black;
@@ -751,26 +754,25 @@ h1 {
   border-radius: 5px;
   color: #278870;
 }
-.restaurant__h4 {
+.restaurant__description {
+  position: relative;
+  /*Restaurant name */
+  /* Restaurant location */
+}
+.restaurant__description__name {
   font-size: 18px;
   font-weight: 700;
   margin-top: 19px;
   margin-bottom: 7px;
   margin-left: 14px;
 }
-
-figcaption {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.restaurant_location {
+.restaurant__description__location {
   font-size: 18px;
   margin-bottom: 16px;
   margin-left: 14px;
 }
 
+/* Heart container main page */
 .main-heart {
   position: absolute;
   right: 26px;
@@ -778,9 +780,13 @@ figcaption {
   font-size: 26px;
   width: 30px;
   height: 30px;
+  /* Combinator to select heart full when heart container hover */
+  /* heart empty */
+  /* heart full */
 }
 .main-heart:hover > .main-heart__full {
   animation: fill 500ms forwards;
+  /* animation keyframe fill effect for heart */
 }
 .main-heart__empty {
   position: absolute;
@@ -848,6 +854,7 @@ figcaption {
 @media (min-width: 768px) {
   .menu_section {
     flex-grow: 1;
+    min-width: 300px;
   }
 }
 .menu_section__card {
@@ -960,11 +967,15 @@ figcaption {
 }
 
 /* Footer section */
+/* Footer container */
 .footer {
   background-color: #323232;
   display: flex;
   flex-direction: column;
   padding-bottom: 27px;
+  /* Footer logo */
+  /* Footer Link */
+  /*Footer icons */
 }
 @media (min-width: 768px) {
   .footer {

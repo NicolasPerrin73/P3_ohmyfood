@@ -1,5 +1,6 @@
 /* Footer section */
 
+/* Footer container */
 .footer{
     background-color: darken($grey-bg,77);
     display: flex;
@@ -13,6 +14,7 @@
      flex-wrap: wrap;       
     }
 
+    /* Footer logo */
     &__logo{
         color: white;
         font-size: 18px;
@@ -22,6 +24,7 @@
         text-align: left;
     }
 
+    /* Footer Link */
     &__link{
         display: flex;
         color: white;
@@ -33,6 +36,7 @@
         }
     }
 
+    /*Footer icons */
     &__ico{
         font-size: 14px;
         width: 14px;
