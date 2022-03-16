@@ -476,7 +476,6 @@ template {
 /* Menu picture style */
 .menu-picture {
   height: 217px;
-  width: 100%;
 }
 .menu-picture__image {
   width: 100%;
@@ -731,11 +730,36 @@ h1 {
   border-radius: 15px;
   box-shadow: 0px 3px 10px -7px black;
   position: relative;
+  /* Heart container main page */
 }
 @media (min-width: 768px) {
   .restaurant__card {
     width: 355px;
   }
+}
+.restaurant__card__like {
+  position: absolute;
+  right: 26px;
+  top: 200px;
+  font-size: 26px;
+  width: 30px;
+  height: 30px;
+  /* Combinator to select heart full when heart container hover */
+  /* heart full */
+}
+.restaurant__card__like:hover > .restaurant__card__like__full {
+  animation: fill 500ms forwards;
+  /* animation keyframe fill effect for heart */
+}
+.restaurant__card__like__full {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-weight: bold !important;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(0);
 }
 .restaurant__img {
   width: 100%;
@@ -772,51 +796,8 @@ h1 {
   margin-left: 14px;
 }
 
-/* Heart container main page */
-.main-heart {
-  position: absolute;
-  right: 26px;
-  top: 200px;
-  font-size: 26px;
-  width: 30px;
-  height: 30px;
-  /* Combinator to select heart full when heart container hover */
-  /* heart empty */
-  /* heart full */
-}
-.main-heart:hover > .main-heart__full {
-  animation: fill 500ms forwards;
-  /* animation keyframe fill effect for heart */
-}
-.main-heart__empty {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-.main-heart__full {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-weight: bold !important;
-  background: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transform: scale(0);
-}
-
-/* Menu section */
-.page-heart {
-  position: absolute;
-  right: 39px;
-  top: 39px;
-  font-size: 26px;
-  width: 30px;
-  height: 30px;
-}
-.page-heart:hover > .main-heart__full {
-  animation: fill 500ms forwards;
-}
-
+/* Menu content */
+/* Menu container */
 .menu {
   display: flex;
   flex-direction: column;
@@ -824,15 +805,38 @@ h1 {
   position: relative;
   background-color: #f6f6f6;
   padding-bottom: 84px;
+  /* Menu header container */
 }
-.menu__h2 {
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 37px;
+  /* Restaurant name */
+  /* Heart container */
+}
+.menu__header__title {
   font-family: "Shrikhand", Impact, sans-serif;
   font-size: 28px;
   margin-top: 38px;
   margin-bottom: 35px;
   margin-left: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu__header__like {
+  position: relative;
+  font-size: 26px;
+  width: 30px;
+  height: 30px;
+  /*Combinator to select heart full when heart container hover */
+}
+.menu__header__like:hover > .restaurant__card__like__full {
+  animation: fill 500ms forwards;
 }
 
+/* Complete Menu container */
 .menu-bloc {
   display: flex;
   flex-direction: column;
@@ -845,11 +849,13 @@ h1 {
   }
 }
 
+/* Menu container */
 .menu_section {
   display: flex;
   flex-direction: column;
   gap: 14px;
   margin-bottom: 43px;
+  /* Menu card container */
 }
 @media (min-width: 768px) {
   .menu_section {
@@ -870,45 +876,61 @@ h1 {
   text-overflow: ellipsis;
   opacity: 0;
   animation: card-appear 1s cubic-bezier(0.45, 0.43, 0.26, 1) forwards;
+  /* card appear one by one */
+  /*Card description container */
+  /* Select option container with price */
+  /* Translation for select option when card hover */
+  /* Rotation of icon when card hover */
+  /* Reduce the width when card hover */
 }
 .menu_section__card--1 {
   animation-delay: 150ms;
+  /* loop to add delay at each card */
 }
 .menu_section__card--2 {
   animation-delay: 300ms;
+  /* loop to add delay at each card */
 }
 .menu_section__card--3 {
   animation-delay: 450ms;
+  /* loop to add delay at each card */
 }
 .menu_section__card--4 {
   animation-delay: 600ms;
+  /* loop to add delay at each card */
 }
 .menu_section__card--5 {
   animation-delay: 750ms;
+  /* loop to add delay at each card */
 }
 .menu_section__card--6 {
   animation-delay: 900ms;
+  /* loop to add delay at each card */
 }
 .menu_section__card--7 {
   animation-delay: 1050ms;
+  /* loop to add delay at each card */
 }
 .menu_section__card--8 {
   animation-delay: 1200ms;
+  /* loop to add delay at each card */
 }
 .menu_section__card--9 {
   animation-delay: 1350ms;
+  /* loop to add delay at each card */
 }
 .menu_section__card--10 {
   animation-delay: 1500ms;
+  /* loop to add delay at each card */
 }
 .menu_section__card__description {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   width: 80%;
   transition: all 500ms;
+  /* reduce the width when card hover */
+  /* Dishes title */
+  /* Dishes information */
 }
-.menu_section__card__h4 {
+.menu_section__card__description__title {
   font-size: 18px;
   font-weight: 600;
   margin-top: 17px;
@@ -918,7 +940,7 @@ h1 {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu_section__card__txt {
+.menu_section__card__description__txt {
   margin-left: 11px;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -930,6 +952,7 @@ h1 {
   right: -60px;
   height: 100%;
   transition: transform 500ms ease-in-out;
+  /* option select appear with translation when card hover */
 }
 .menu_section__card:hover > .menu_section__card--translate {
   transform: translateX(-60px);
@@ -941,6 +964,7 @@ h1 {
   width: calc(80% - 60px);
 }
 
+/* Dishes price */
 .price {
   display: flex;
   align-self: flex-end;
@@ -949,6 +973,7 @@ h1 {
   font-weight: 500;
 }
 
+/* Select option container */
 .check-box {
   background-color: #99E2D0;
   width: 60px;
@@ -959,6 +984,7 @@ h1 {
   height: 100%;
 }
 
+/* Select icon */
 .fa-check-circle {
   font-size: 20px;
   color: white;

@@ -34,6 +34,37 @@
         @media (min-width:768px) {
             width: 355px;
         }
+
+        /* Heart container main page */
+        &__like{
+            position: absolute;
+            right: 26px;
+            top: 200px;
+            font-size: 26px;
+            width: 30px;
+            height: 30px;
+
+            /* Combinator to select heart full when heart container hover */
+            &:hover > .restaurant__card__like__full{
+                animation: fill 500ms forwards; /* animation keyframe fill effect for heart */
+            }
+
+
+            /* heart full */
+            &__full{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                font-weight: bold !important;
+                background: linear-gradient($primary-color, $secondary-color);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transform: scale(0);
+
+
+            }
+        }
+
     }
 
     /* Card images */
@@ -80,40 +111,6 @@
 
 }
 
-/* Heart container main page */
-.main-heart{
-    position: absolute;
-    right: 26px;
-    top: 200px;
-    font-size: 26px;
-    width: 30px;
-    height: 30px;
-
-    /* Combinator to select heart full when heart container hover */
-    &:hover > .main-heart__full{
-        animation: fill 500ms forwards; /* animation keyframe fill effect for heart */
-    }
-
-    /* heart empty */
-    &__empty{
-        position: absolute;
-        top: 0px;
-        left: 0px;
-}
-    /* heart full */
-    &__full{
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        font-weight: bold !important;
-        background: linear-gradient($primary-color, $secondary-color);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transform: scale(0);
-
-
-    }
-}
 
 
 

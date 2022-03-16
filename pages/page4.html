@@ -9,10 +9,7 @@
 
 <!-- CSS Files -->
 
-        <!--<link rel="stylesheet" href="../CSS/style.css" /> -->
         <link rel="stylesheet" href="../CSS/prefixed/style.css">
-        <link rel="stylesheet" media="screen and (min-width: 768px)" href="../CSS/tablet.css" />
-        <link rel="stylesheet" media="screen and (min-width: 993px)" href="../CSS/desktop.css" />
 
 <!-- CDN Font Awesome -->
 
@@ -49,15 +46,21 @@
 
     <main class="menu">
 
-        <!--Restaurant Name-->
+        <!--Menu header-->
 
-        <div class="menu__h2">
-            <h2>Le délice des sens</h2>
+        <div class="menu__header">
 
-            <div class="page-heart">
-                <i class="far fa-heart main-heart__empty page-heart__empty--bg"></i>      
-                <i class="far fa-heart main-heart__full"></i>
+            <!--Restaurant Name-->
+
+            <h2 class="menu__header__title">Le délice des sens</h2>
+
+            <!-- Restaurant like -->
+
+            <div class="menu__header__like">
+                <i class="far fa-heart"></i>      
+                <i class="far fa-heart restaurant__card__like__full"></i>
             </div>
+
         </div>
 
         <!--Menu-->
@@ -75,8 +78,8 @@
                 <div class="menu_section__card menu_section__card--1">
 
                     <div class="menu_section__card__description">
-                        <h4 class="menu_section__card__h4">Tartare de thon</h4>
-                        <p class="menu_section__card__txt">Assaisonné au yuzu</p>
+                        <h4 class="menu_section__card__description__title">Tartare de thon</h4>
+                        <p class="menu_section__card__description__txt">Assaisonné au yuzu</p>
                     </div>
                             
                     <div class="menu_section__card--translate">
@@ -93,8 +96,8 @@
                 <div class="menu_section__card menu_section__card--2">
 
                     <div class="menu_section__card__description">
-                        <h4 class="menu_section__card__h4">Bouchée de homard croustillant</h4>
-                        <p class="menu_section__card__txt">Et sa farandole de petits légumes</p>
+                        <h4 class="menu_section__card__description__title">Bouchée de homard croustillant</h4>
+                        <p class="menu_section__card__description__txt">Et sa farandole de petits légumes</p>
                     </div>
 
                     <div class="menu_section__card--translate">
@@ -111,8 +114,8 @@
                 <div class="menu_section__card menu_section__card--3">
 
                     <div class="menu_section__card__description">
-                        <h4 class="menu_section__card__h4">Velouté de cèpes</h4>
-                        <p class="menu_section__card__txt">Aux truffes</p>
+                        <h4 class="menu_section__card__description__title">Velouté de cèpes</h4>
+                        <p class="menu_section__card__description__txt">Aux truffes</p>
                     </div>
 
                     <div class="menu_section__card--translate">
@@ -137,8 +140,8 @@
                 <div class="menu_section__card menu_section__card--4">
 
                     <div class="menu_section__card__description">
-                        <h4 class="menu_section__card__h4">Poulet rôti aux herbes de Provence</h4>
-                        <p class="menu_section__card__txt">Et sa crème de truffe</p>
+                        <h4 class="menu_section__card__description__title">Poulet rôti aux herbes de Provence</h4>
+                        <p class="menu_section__card__description__txt">Et sa crème de truffe</p>
                     </div>
 
                     <div class="menu_section__card--translate">
@@ -155,8 +158,8 @@
                 <div class="menu_section__card menu_section__card--5">
 
                     <div class="menu_section__card__description">
-                        <h4 class="menu_section__card__h4">Langouste rôtie</h4>
-                        <p class="menu_section__card__txt">Et ses légumes de saison</p>
+                        <h4 class="menu_section__card__description__title">Langouste rôtie</h4>
+                        <p class="menu_section__card__description__txt">Et ses légumes de saison</p>
                     </div>
 
                     <div class="menu_section__card--translate">
@@ -173,8 +176,8 @@
                 <div class="menu_section__card menu_section__card--6">
 
                     <div class="menu_section__card__description">
-                        <h4 class="menu_section__card__h4">Côte de boeuf Angus</h4>
-                        <p class="menu_section__card__txt">Et sa purée de panais</p>
+                        <h4 class="menu_section__card__description__title">Côte de boeuf Angus</h4>
+                        <p class="menu_section__card__description__txt">Et sa purée de panais</p>
                     </div>
 
                     <div class="menu_section__card--translate">
@@ -199,8 +202,8 @@
                 <div class="menu_section__card menu_section__card--7">
 
                     <div class="menu_section__card__description">
-                        <h4 class="menu_section__card__h4">Farandole de desserts</h4>
-                        <p class="menu_section__card__txt">Du chef</p>
+                        <h4 class="menu_section__card__description__title">Farandole de desserts</h4>
+                        <p class="menu_section__card__description__txt">Du chef</p>
                     </div>
 
                     <div class="menu_section__card--translate">
@@ -217,8 +220,8 @@
                 <div class="menu_section__card menu_section__card--8">
 
                     <div class="menu_section__card__description">
-                        <h4 class="menu_section__card__h4">Crème brulée </h4>
-                        <p class="menu_section__card__txt">Revisitée</p>
+                        <h4 class="menu_section__card__description__title">Crème brulée </h4>
+                        <p class="menu_section__card__description__txt">Revisitée</p>
                     </div>
 
                     <div class="menu_section__card--translate">
@@ -235,8 +238,8 @@
                 <div class="menu_section__card menu_section__card--9">
 
                     <div class="menu_section__card__description">
-                        <h4 class="menu_section__card__h4">Tiramisu</h4>
-                        <p class="menu_section__card__txt">À la noisette</p>
+                        <h4 class="menu_section__card__description__title">Tiramisu</h4>
+                        <p class="menu_section__card__description__txt">À la noisette</p>
                     </div>
 
                     <div class="menu_section__card--translate">

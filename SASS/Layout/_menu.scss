@@ -1,19 +1,6 @@
-/* Menu section */
+/* Menu content */
 
-.page-heart{
-    position: absolute;
-    right: 39px;
-    top: 39px;
-    font-size: 26px;
-    width: 30px;
-    height: 30px;
-
-    &:hover > .main-heart__full{
-        animation: fill 500ms forwards;
-    }
-}
-
-
+/* Menu container */
 .menu{
     display: flex;
     flex-direction: column;
@@ -22,15 +9,41 @@
     background-color: $grey-bg;
     padding-bottom: 84px;
 
-    &__h2{
-        font-family: 'Shrikhand', Impact, sans-serif;
-        font-size: 28px;
-        margin-top: 38px;
-        margin-bottom: 35px;
-        margin-left: 20px;
+    /* Menu header container */
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 37px;
+
+        /* Restaurant name */
+        &__title{
+            font-family: 'Shrikhand', Impact, sans-serif;
+            font-size: 28px;
+            margin-top: 38px;
+            margin-bottom: 35px;
+            margin-left: 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        
+        /* Heart container */
+        &__like{
+            position: relative;
+            font-size: 26px;
+            width: 30px;
+            height: 30px;
+            
+            /*Combinator to select heart full when heart container hover */
+            &:hover > .restaurant__card__like__full{
+                animation: fill 500ms forwards;
+            }
+        }
     }
 }
 
+/* Complete Menu container */
 .menu-bloc{
     display: flex;
     flex-direction: column;
@@ -42,6 +55,7 @@
     }
 }
 
+/* Menu container */
 .menu_section{
 
     display: flex;
@@ -54,7 +68,7 @@
         min-width: 300px;
     }
 
-
+    /* Menu card container */
     &__card{
         background-color: white;
         width: 93%;
@@ -67,59 +81,62 @@
         position: relative;
         text-overflow: ellipsis;
         opacity: 0;
-        animation: card-appear 1s cubic-bezier(.45,.43,.26,1) forwards;
+        animation: card-appear 1s cubic-bezier(.45,.43,.26,1) forwards; /* card appear one by one */
 
         @for $i from 1 to 11{
             &--#{$i} {
-                animation-delay: 150ms * $i;
+                animation-delay: 150ms * $i; /* loop to add delay at each card */
             }
         }
 
+        /*Card description container */
         &__description{
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
             width: 80%;
-            transition: all 500ms;
+            transition: all 500ms; /* reduce the width when card hover */
+
+            /* Dishes title */
+            &__title{
+                font-size: 18px;
+                font-weight: 600;
+                margin-top: 17px;
+                margin-bottom: 7px;
+                margin-left: 11px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            
+            /* Dishes information */
+            &__txt{
+                margin-left: 11px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
         }
 
-        &__h4{
-            font-size: 18px;
-            font-weight: 600;
-            margin-top: 17px;
-            margin-bottom: 7px;
-            margin-left: 11px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-
-        &__txt{
-            margin-left: 11px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-
+        /* Select option container with price */
         &--translate{
             display: flex;
             position: absolute;
             right: -60px;
             height: 100%;
-            transition: transform 500ms ease-in-out;
+            transition: transform 500ms ease-in-out; /* option select appear with translation when card hover */
         }
 
-
+        /* Translation for select option when card hover */
         &:hover > .menu_section__card--translate{
             transform: translateX(-60px);
 
         }
 
+        /* Rotation of icon when card hover */
         &:hover .fa-check-circle{
             transform: rotate(360deg);
 
         }
 
+        /* Reduce the width when card hover */
         &:hover > .menu_section__card__description{
             width: calc(80% - 60px);
         }
@@ -128,6 +145,7 @@
 
 }    
 
+/* Dishes price */
 .price{
     display: flex;
     align-self: flex-end;
@@ -136,6 +154,7 @@
     font-weight: 500;
 }
 
+/* Select option container */
 .check-box{
     background-color: $tertiary-color;
     width: 60px;
@@ -146,6 +165,7 @@
     height: 100%;
 }
 
+/* Select icon */
 .fa-check-circle{
     font-size: 20px;
     color: white;
