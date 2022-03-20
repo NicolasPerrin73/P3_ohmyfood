@@ -37,6 +37,16 @@
                 width: 290px;
             }
             
+            /* Card hover */
+            &:hover{
+                background-color: lighten($color: $primary-color, $amount: 36); /* light version of $primary-color variable */
+
+                /* Combinator to select icon when card hover */
+                .functionning__step__card__ico{
+                    color: $primary-color;
+                }
+            }
+
             /* Card number */
             &__number{
                 width: 16px;
@@ -63,15 +73,7 @@
                 margin-left: 20px;
             }
 
-            /* Card hover */
-            &:hover{
-                background-color: lighten($color: $primary-color, $amount: 36); /* light version of $primary-color variable */
 
-                /* Combinator to select icon when card hover */
-                .functionning__step__card__ico{
-                    color: $primary-color;
-                }
-            }
 
             
         }

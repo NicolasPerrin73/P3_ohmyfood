@@ -49,7 +49,6 @@
                 animation: fill 500ms forwards; /* animation keyframe fill effect for heart */
             }
 
-
             /* heart full */
             &__full{
                 position: absolute;
@@ -60,8 +59,6 @@
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
                 transform: scale(0);
-
-
             }
         }
 

@@ -5,7 +5,6 @@
   }
   100% {
     transform: scale(1);
-    overflow: hidden;
   }
 }
 @keyframes card-appear {
@@ -498,15 +497,15 @@ template {
 }
 .loading__dot-1 {
   color: #9356DC;
-  animation: dot-fall 500ms both, dot-mouv 1s 499ms infinite;
+  animation: dot-fall 500ms both, dot-mouv 1s 500ms infinite;
 }
 .loading__dot-2 {
   color: #FF79DA;
-  animation: dot-fall 500ms 200ms both, dot-mouv 1s 699ms infinite;
+  animation: dot-fall 500ms 200ms both, dot-mouv 1s 700ms infinite;
 }
 .loading__dot-3 {
   color: #99E2D0;
-  animation: dot-fall 500ms 400ms both, dot-mouv 1s 899ms infinite;
+  animation: dot-fall 500ms 400ms both, dot-mouv 1s 900ms infinite;
 }
 
 /* General */
@@ -700,15 +699,23 @@ h1 {
   align-items: center;
   transition: all 500ms;
   /* smooth apparition of background when hover */
+  /* Card hover */
   /* Card number */
   /* Card icon */
   /*Card text */
-  /* Card hover */
 }
 @media (min-width: 768px) {
   .functionning__step__card {
     width: 290px;
   }
+}
+.functionning__step__card:hover {
+  background-color: #f4eefc;
+  /* light version of $primary-color variable */
+  /* Combinator to select icon when card hover */
+}
+.functionning__step__card:hover .functionning__step__card__ico {
+  color: #9356DC;
 }
 .functionning__step__card__number {
   width: 16px;
@@ -730,14 +737,6 @@ h1 {
 .functionning__step__card__txt {
   font-weight: 600;
   margin-left: 20px;
-}
-.functionning__step__card:hover {
-  background-color: #f4eefc;
-  /* light version of $primary-color variable */
-  /* Combinator to select icon when card hover */
-}
-.functionning__step__card:hover .functionning__step__card__ico {
-  color: #9356DC;
 }
 
 /* Restaurants Section */

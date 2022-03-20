@@ -15,17 +15,17 @@
 
     &__dot-1{
         color: $primary-color;
-        animation: dot-fall 500ms both, dot-mouv 1s 499ms infinite;
+        animation: dot-fall 500ms both, dot-mouv 1s 500ms infinite;
     }
 
     &__dot-2{
         color: $secondary-color;
-        animation: dot-fall 500ms 200ms both, dot-mouv 1s 699ms infinite;
+        animation: dot-fall 500ms 200ms both, dot-mouv 1s 700ms infinite;
     }
 
     &__dot-3{
         color: $tertiary-color;
-        animation: dot-fall 500ms 400ms both, dot-mouv 1s 899ms infinite;
+        animation: dot-fall 500ms 400ms both, dot-mouv 1s 900ms infinite;
     }
 
 }

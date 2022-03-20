@@ -127,13 +127,11 @@
         /* Translation for select option when card hover */
         &:hover > .menu_section__card--translate{
             transform: translateX(-60px);
-
         }
 
         /* Rotation of icon when card hover */
         &:hover .fa-check-circle{
             transform: rotate(360deg);
-
         }
 
         /* Reduce the width when card hover */
