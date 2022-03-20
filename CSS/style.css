@@ -1,3 +1,58 @@
+@keyframes fill {
+  0% {
+    transform: scale(0);
+    animation-timing-function: cubic-bezier(0.16, 0.61, 0.67, 0.87);
+  }
+  100% {
+    transform: scale(1);
+    overflow: hidden;
+  }
+}
+@keyframes card-appear {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes loader-disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes dot-fall {
+  0% {
+    transform: translateY(-600px);
+  }
+  90% {
+    transform: translateY(-5px) scale(1);
+  }
+  100% {
+    transform: translateY(0px) scale(1.2, 0.8);
+  }
+}
+@keyframes dot-mouv {
+  0% {
+    transform: translateY(0px) scale(1.2, 0.8);
+    animation-timing-function: cubic-bezier(0.39, 0.66, 0.45, 0.95);
+    /*ralenti en fin de course */
+  }
+  50% {
+    transform: translateY(-30px);
+    animation-timing-function: cubic-bezier(0.72, 0.13, 0.89, 0.6);
+    /*ralenti en debut de course */
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 /* Prefixe box-sizing */
 body {
   box-sizing: border-box;
@@ -398,61 +453,6 @@ template {
   display: none;
 }
 
-@keyframes fill {
-  0% {
-    transform: scale(0);
-    animation-timing-function: cubic-bezier(0.16, 0.61, 0.67, 0.87);
-  }
-  100% {
-    transform: scale(1);
-    overflow: hidden;
-  }
-}
-@keyframes card-appear {
-  0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-@keyframes loader-disappear {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-@keyframes dot-fall {
-  0% {
-    transform: translateY(-600px);
-  }
-  90% {
-    transform: translateY(-5px) scale(1);
-  }
-  100% {
-    transform: translateY(0px) scale(1.2, 0.8);
-  }
-}
-@keyframes dot-mouv {
-  0% {
-    transform: translateY(0px) scale(1.2, 0.8);
-    animation-timing-function: cubic-bezier(0.39, 0.66, 0.45, 0.95);
-    /*ralenti en fin de course */
-  }
-  50% {
-    transform: translateY(-30px);
-    animation-timing-function: cubic-bezier(0.72, 0.13, 0.89, 0.6);
-    /*ralenti en debut de course */
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
 .btn {
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 3px 10px -7px black;
@@ -566,6 +566,50 @@ h1 {
   font-size: 18px;
   position: absolute;
   left: 24px;
+}
+
+/* Footer section */
+/* Footer container */
+.footer {
+  background-color: #323232;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 27px;
+  /* Footer logo */
+  /* Footer Link */
+  /*Footer icons */
+}
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+.footer__logo {
+  color: white;
+  font-size: 18px;
+  margin-top: 26px;
+  margin-bottom: 22px;
+  margin-left: 25px;
+  text-align: left;
+}
+.footer__link {
+  display: flex;
+  color: white;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .footer__link {
+    margin-bottom: 0px;
+  }
+}
+.footer__ico {
+  font-size: 14px;
+  width: 14px;
+  margin-right: 10px;
 }
 
 /* Localisation */
@@ -990,50 +1034,6 @@ h1 {
   color: white;
   transform: rotate(0deg);
   transition: transform 500ms ease-in-out;
-}
-
-/* Footer section */
-/* Footer container */
-.footer {
-  background-color: #323232;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 27px;
-  /* Footer logo */
-  /* Footer Link */
-  /*Footer icons */
-}
-@media (min-width: 768px) {
-  .footer {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-}
-.footer__logo {
-  color: white;
-  font-size: 18px;
-  margin-top: 26px;
-  margin-bottom: 22px;
-  margin-left: 25px;
-  text-align: left;
-}
-.footer__link {
-  display: flex;
-  color: white;
-  margin-left: 25px;
-  margin-bottom: 10px;
-}
-@media (min-width: 768px) {
-  .footer__link {
-    margin-bottom: 0px;
-  }
-}
-.footer__ico {
-  font-size: 14px;
-  width: 14px;
-  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
